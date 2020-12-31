@@ -19,12 +19,17 @@ function triggerClick(el) {
 }
 
 setInterval(()=>{
-if (location.pathname == "/product/10086375798519.html") {
+if (location.pathname == "/product/10086726905036.html") {
     console.log('click buy now')
     const btns = document.querySelectorAll('#pro-operation a')
     btns.forEach(el => triggerClick(el))
     // triggerClick(document.getElementById('prdDetailBuyNow'))
-} else {
+}else if (location.pathname == "/product/10086368169358.html") {
+    console.log('click buy now')
+    const btns = document.querySelectorAll('#pro-operation a')
+    btns.forEach(el => triggerClick(el))
+    // triggerClick(document.getElementById('prdDetailBuyNow'))
+}else {
     console.log('click confirm submit')
     triggerClick(document.getElementById('confirmSubmit'))
 }}, 100)
